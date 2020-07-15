@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinlong.dao.BisWalletMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xinlong.bean.BisWallet">
+        <id column="tbw_id" property="tbwId" />
+        <result column="dis_id" property="disId" />
+        <result column="dis_amount" property="disAmount" />
+        <result column="dis_fzamount" property="disFzamount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        tbw_id, dis_id, dis_amount, dis_fzamount
+    </sql>
+
+</mapper>

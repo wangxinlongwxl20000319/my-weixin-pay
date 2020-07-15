@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinlong.dao.WalletMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xinlong.bean.Wallet">
+        <id column="tuw_id" property="tuwId" />
+        <result column="user_id" property="userId" />
+        <result column="er_amount" property="erAmount" />
+        <result column="user_forzon" property="userForzon" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        tuw_id, user_id, er_amount, user_forzon
+    </sql>
+
+</mapper>

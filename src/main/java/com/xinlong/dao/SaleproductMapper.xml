@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinlong.dao.SaleproductMapper">
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xinlong.bean.Saleproduct">
+        <id column="tbs_id" property="tbsId" />
+        <result column="pid" property="pid" />
+        <result column="pname" property="pname" />
+        <result column="price" property="price" />
+        <result column="salecount" property="salecount" />
+        <result column="saingprice" property="saingprice" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        tbs_id, pid, pname, price, salecount, saingprice
+    </sql>
+
+</mapper>

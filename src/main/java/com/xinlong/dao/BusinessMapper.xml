@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinlong.dao.BusinessMapper">
+
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xinlong.bean.Business">
+        <id column="tbs_id" property="tbsId" />
+        <result column="bis_id" property="bisId" />
+        <result column="bis_name" property="bisName" />
+        <result column="bis_tel" property="bisTel" />
+        <result column="bis_flag" property="bisFlag" />
+        <result column="bis_email" property="bisEmail" />
+        <result column="bis_addr" property="bisAddr" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        tbs_id, bis_id, bis_name, bis_tel, bis_flag, bis_email, bis_addr
+    </sql>
+
+</mapper>
